@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Arts Funding</title>
+  <link rel="icon" href="imgs/download.png">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+  <div class = "header-container">
+
+  
+    <!-- Part 1: Navbar Starter Code -->
+
+<div class="navbar">
+  <ul>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#Research">Research</a></li>
+    <li><a href="#Videos">Videos</a></li>
+    <li><a href="#News">News</a></li>
+    <li ><button id="theme-button">Toggle Dark Mode</button></li>
+    <!-- Stretch Challenge: Drop Down -->
+  </ul>
+</div>
+    
+
+<!-- Part 2: Flexbox Layout Stater Code -->
+
+<!--div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div> -->
+    
+          <div class = "active revealable">
+    <div id = "Home">
+    <h1>Save the Arts!</h1>
+    <div id= "header-img">
+      <img src="imgs/img1.jpeg" alt="image of arts">
+      <img src="imgs/artscamp4.jpg" alt ="img">
+  </div>
+    <h2>Art education is a critical aspect students need in order to thrive in their envirnoment. However there is a serious lack of funding for arts in schools.</h2>
+      <div id="header-button">
+    <button type="button">Find ways YOU can help!</button>
+    <button type="button">Schools in your Location!</button>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="header-item active revealable">
+    <div id = "Research">
+    <!--- About --->
+    <p> More than 80% of schools funding has been cut since 2008. As a result schools are forced to decide what aspects of education are deemed as more valuable. This has caused schools to cut arts from the curriculum meaning classes such as music, theater, dance, and all other art related classes are being put to the side or are being overall eleminted from schools. This is a problem because art is an essiential skill people need to create innovative ideas.
+    </p>
+
+
+    <!--- Data --->
+
+    <h3>Research Shows:</h3>
+    <h4> The beneficial affects art curriculum has on students</h4>
+
+  
+        <li> Low-income students who are highly engaged in the arts are more than twice as likely to graduate college as their peers with no arts education.</li>
+        <li> Students involved in arts are 4 times more likely to participate in a math and science fair</li>
+        <li> Lower droupout rates</li>
+  </div>
+  </div>
+
+<div class = "active revealable">
+    <div class="header-item">
+
+      <div id = "Videos">
+    <!--- Impact --->
+    
+    <h3>Check out these videos!</h3>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BQ4UwzRLVpQ?start=137" id = "video1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+        
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8-u6naFYWpg?start=177" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  </iframe>
+
+    </div>
+    </div>
+  </div>
+  
+
+  <div class="header-item active revealable">
+    <div id = "News">
+    <h2>Recent News</h2>
+
+    <a class=""
+        href="https://www.brookings.edu/blog/brown-center-chalkboard/2019/02/12/new-evidence-of-the-benefits-of-arts-education/">
+        <article>
+            <h3>New evidence of the benefits of arts education</h3>
+        </article>
+    </a>
+  <a class= ""
+      href="https://www.americansforthearts.org/by-program/networks-and-councils/arts-education-network/tools-resources/arts-ed-navigator/facts-figures"
+      <article>
+        <h3>Facts & Figures: data on the benefits and decline of arts education.</h3>
+      </article>
+    </a>
+  <a class= ""
+      href="https://www.kmsd.edu/site/default.aspx?DomainID=312&FlexDataID=3316&ModuleInstanceID=1237&PageID=383&PageType=3&RenderLoc=0&ViewID=6446EE88-D30C-497E-9316-3F8874B3E108"
+      <article>
+        <h3>Funding for Schools’ Art Programs Ending?</h3>
+      </article>
+    </a>
+    </div>
+
+<div class="petition active revealable" id="petition">
+
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container">
+
+
+      <div class="petition-para">
+        <!-- info goes here -->
+        <p> Do you want to make a difference for the future? Help young kids feel inspired and motivated to express themselves! Arts is being servely underfunded in schools and being put to the side. Creativity is important for kids to have, for it can help develop their problem solving skills and so much more. Fill out this form to make a difference!</p>
+      </div>
+
+      <div class="signatures">
+        <p>🖊️ DJ from Brooklyn supports this!</p>
+        <p>🖊️ Amy from Queens supports this!</p>
+        <p>🖊️ Teresa from Harlem supports this!</p>
+      </div>
+
+    </div>
+
+  <!--- Sign Petition Form --->
+  <form id="sign-petition" title="sign-petition">
+    <!-- inputs go here -->
+  <label for="Name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="First Last">
+
+  <label for="Location">Location:</label>
+  <input type="text" id="location" placeholder="Location">
+  
+  </form>
+
+   <!--- Sign Now Button --->
+  <button id="sign-now-button">Sign Now</button>
+
+</div>
+ 
+  </div>
+ 
+ <div class= "footer">
+     <h3> Want to learn more?</h3>
+    <a class= ""
+      href="https://psarts.org/"
+      <article>
+        <h3>Click Here.</h3>
+      </article>
+    </a>
+  </div>
+
+
+    <!-- Modal -->
+<div id="thanks-modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div id="modal-text-container">
+      <!-- text here -->
+      <p id= "thanks-content-modal">Thanks</p>
+      <!-- button here (stretch feature) -->
+    </div>
+    <!-- image here-->
+    <img id= "modal-image" src = "imgs/artk.webp" alt = "kid looking at art wall">
+  </div>
+    
+</div>
+  
+<script src="index.js"></script>
+
+</body>
+
+</html>
+
+
+  
+</html>
